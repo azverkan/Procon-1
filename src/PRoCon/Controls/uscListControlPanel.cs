@@ -219,7 +219,7 @@ namespace PRoCon.Controls {
             if (this.m_prcClient != null) {
                 //this.RefreshLocalMaplist();
 
-                if (this.m_prcClient.GameType == "BF3" || this.m_prcClient.GameType == "BF4" || this.m_prcClient.GameType == "MOHW")
+                if (this.m_prcClient.GameType == "BF3" || this.m_prcClient.GameType == "BF4" || this.m_prcClient.GameType == "MOHW" || this.m_prcClient.GameType == "BFHL")
                 {
                     this.SendCommand("mapList.list");
                 }
