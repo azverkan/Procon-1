@@ -1,6 +1,6 @@
 /////////////////////////////////////////////
 // This definitions file will be overwritten during an update.
-//  (2015-05-11.01)
+//  (2015-06-21.01)
 // This file contains the standard defintions required to run procon 
 // connected to a BFHL server
 /////////////////////////////////////////////
@@ -10,6 +10,7 @@ procon.protected.serverversions.add BFHL "362312" "Test-08/14"
 procon.protected.serverversions.add BFHL "525698" "R2"
 procon.protected.serverversions.add BFHL "532516" "R3"
 procon.protected.serverversions.add BFHL "537093" "R4"
+procon.protected.serverversions.add BFHL "547660" "R5"
 
 procon.protected.specialization.clear
 
@@ -38,6 +39,7 @@ procon.protected.weapons.add None "U_CS_Gas" Auxiliary Explosive
 procon.protected.weapons.add Assault "U_CZ75" Auxiliary Handgun
 procon.protected.weapons.add None "U_FIM92" Secondary ProjectileExplosive
 procon.protected.weapons.add Demolition "U_FMG9" Primary SMG
+procon.protected.weapons.add Support "U_FNFAL" Primary AssaultRifle
 procon.protected.weapons.add None "U_Flashbang" Auxiliary Explosive
 procon.protected.weapons.add Assault "U_G17" Auxiliary Handgun
 procon.protected.weapons.add Recon "U_G18C" Auxiliary Handgun
@@ -66,6 +68,7 @@ procon.protected.weapons.add None "U_KnifeSurvival" Secondary Melee
 procon.protected.weapons.add None "U_KnifeTrench" Secondary Melee
 procon.protected.weapons.add None "U_KnifeTrench" Secondary Melee
 procon.protected.weapons.add None "U_KnifeTrench" Secondary Melee
+procon.protected.weapons.add Support "U_KSG12" Primary Shotgun
 procon.protected.weapons.add Assault "U_L85A2" Primary AssaultRifle
 procon.protected.weapons.add Recon "U_L96A1" Primary SniperRifle
 procon.protected.weapons.add None "U_LeadPipe" Secondary Melee
@@ -88,6 +91,7 @@ procon.protected.weapons.add Assault "U_MG36" Primary Carbine
 procon.protected.weapons.add None "U_Molotov" Auxiliary Explosive
 procon.protected.weapons.add Demolition "U_MP5K" Primary SMG
 procon.protected.weapons.add Demolition "U_MPX" Primary SMG
+procon.protected.weapons.add None "U_NailGun" Secondary Handgun
 procon.protected.weapons.add None "U_NightStick" Secondary Melee
 procon.protected.weapons.add Assault "U_P226" Auxiliary Handgun
 procon.protected.weapons.add Demolition "U_P90" Primary SMG
@@ -109,7 +113,8 @@ procon.protected.weapons.add Support "U_SBS12Short" Primary Shotgun
 procon.protected.weapons.add Support "U_SCARH" Primary AssaultRifle
 procon.protected.weapons.add Recon "U_Scout" Primary SniperRifle
 procon.protected.weapons.add Recon "U_SCR308" Primary SniperRifle
-procon.protected.weapons.add Assault "U_SG533LB" Primary Carbine
+procon.protected.weapons.add Support "U_FNFAL" Primary AssaultRifle
+procon.protected.weapons.add Support "U_SG510" Primary AssaultRifle
 procon.protected.weapons.add None "U_SledgeHammer" Secondary Melee
 procon.protected.weapons.add None "u_smaw" Secondary ProjectileExplosive
 procon.protected.weapons.add None "u_sp_smaw" Secondary ProjectileExplosive
@@ -121,6 +126,7 @@ procon.protected.weapons.add Support "U_SW40P" Auxiliary Handgun
 procon.protected.weapons.add Demolition "U_SW38Snub" Auxiliary Handgun
 procon.protected.weapons.add None "U_TaserGun" Auxiliary Handgun
 procon.protected.weapons.add Demolition "U_Taurus44" Auxiliary Handgun
+procon.protected.weapons.add None "U_TommyGun" Primary SMG
 procon.protected.weapons.add None "U_TracerDartGun" Auxiliary Handgun
 procon.protected.weapons.add Recon "U_TripMine" Secondary Explosive
 procon.protected.weapons.add Demolition "U_UMP45" Primary SMG
@@ -244,6 +250,49 @@ procon.protected.maps.add "BloodMoney0" "MP_OffShore" "Blood Money" "Riptide" 0
 procon.protected.maps.add "BloodMoney0" "MP_Hills" "Blood Money" "Hollywood Heights" 0
 procon.protected.maps.add "BloodMoney0" "MP_Glades" "Blood Money" "Everglades" 0
 
+// XP1 (Criminal Activity)
+procon.protected.maps.add "TurfWarLarge0" "XP1_MallCops" "Conquest Large" "Black Friday" 0
+procon.protected.maps.add "TurfWarLarge0" "XP1_Nights" "Conquest Large" "Code Blue" 0
+procon.protected.maps.add "TurfWarLarge0" "XP1_Projects" "Conquest Large" "The Beat" 0
+procon.protected.maps.add "TurfWarLarge0" "XP1_Sawmill" "Conquest Large" "Backwoods" 0
+
+procon.protected.maps.add "TurfWarSmall0" "XP1_MallCops" "Conquest Small" "Black Friday" 0
+procon.protected.maps.add "TurfWarSmall0" "XP1_Nights" "Conquest Small" "Code Blue" 0
+procon.protected.maps.add "TurfWarSmall0" "XP1_Projects" "Conquest Small" "The Beat" 0
+procon.protected.maps.add "TurfWarSmall0" "XP1_Sawmill" "Conquest Small" "Backwoods" 0
+
+procon.protected.maps.add "Hostage0" "XP1_MallCops" "Rescue" "Black Friday" 0
+procon.protected.maps.add "Hostage0" "XP1_Nights" "Rescue" "Code Blue" 0
+procon.protected.maps.add "Hostage0" "XP1_Projects" "Rescue" "The Beat" 0
+procon.protected.maps.add "Hostage0" "XP1_Sawmill" "Rescue" "Backwoods" 0
+
+procon.protected.maps.add "Hit0" "XP1_MallCops" "Crosshair" "Black Friday" 0
+procon.protected.maps.add "Hit0" "XP1_Nights" "Crosshair" "Code Blue" 0
+procon.protected.maps.add "Hit0" "XP1_Projects" "Crosshair" "The Beat" 0
+procon.protected.maps.add "Hit0" "XP1_Sawmill" "Crosshair" "Backwoods" 0
+
+procon.protected.maps.add "Heist0" "XP1_MallCops" "Heist" "Black Friday" 0
+procon.protected.maps.add "Heist0" "XP1_Nights" "Heist" "Code Blue" 0
+procon.protected.maps.add "Heist0" "XP1_Projects" "Heist" "The Beat" 0
+procon.protected.maps.add "Heist0" "XP1_Sawmill" "Heist" "Backwoods" 0
+
+procon.protected.maps.add "TeamDeathMatch0" "XP1_MallCops" "Team Deathmatch" "Black Friday" 0
+procon.protected.maps.add "TeamDeathMatch0" "XP1_Nights" "Team Deathmatch" "Code Blue" 0
+procon.protected.maps.add "TeamDeathMatch0" "XP1_Projects" "Team Deathmatch" "The Beat" 0
+procon.protected.maps.add "TeamDeathMatch0" "XP1_Sawmill" "Team Deathmatch" "Backwoods" 0
+
+procon.protected.maps.add "Hotwire0" "XP1_Sawmill" "Hotwire" "Backwoods" 0
+
+procon.protected.maps.add "BloodMoney0" "XP1_MallCops" "Blood Money" "Black Friday" 0
+procon.protected.maps.add "BloodMoney0" "XP1_Nights" "Blood Money" "Code Blue" 0
+procon.protected.maps.add "BloodMoney0" "XP1_Projects" "Blood Money" "The Beat" 0
+procon.protected.maps.add "BloodMoney0" "XP1_Sawmill" "Blood Money" "Backwoods" 0
+
+procon.protected.maps.add "CashGrab0" "XP1_MallCops" "Bounty Hunter" "Black Friday" 0
+procon.protected.maps.add "CashGrab0" "XP1_Nights" "Bounty Hunter" "Code Blue" 0
+procon.protected.maps.add "CashGrab0" "XP1_Projects" "Bounty Hunter" "The Beat" 0
+procon.protected.maps.add "CashGrab0" "XP1_Sawmill" "Bounty Hunter" "Backwoods" 0
+
 // Conquest Large
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -282,6 +331,23 @@ procon.protected.teamnames.add "MP_Hills" 2 "global.conquest.crim" "crim.png" "T
 procon.protected.teamnames.add "MP_Glades" 0 "global.conquest.neutral" "" "TurfWarLarge0"
 procon.protected.teamnames.add "MP_Glades" 1 "global.conquest.cop" "cop.png" "TurfWarLarge0"
 procon.protected.teamnames.add "MP_Glades" 2 "global.conquest.crim" "crim.png" "TurfWarLarge0"
+
+// XP1 (Criminal Activity)
+procon.protected.teamnames.add "XP1_MallCops" 0 "global.conquest.neutral" "" "TurfWarLarge0"
+procon.protected.teamnames.add "XP1_MallCops" 1 "global.conquest.cop" "cop.png" "TurfWarLarge0"
+procon.protected.teamnames.add "XP1_MallCops" 2 "global.conquest.crim" "crim.png" "TurfWarLarge0"
+
+procon.protected.teamnames.add "XP1_Nights" 0 "global.conquest.neutral" "" "TurfWarLarge0"
+procon.protected.teamnames.add "XP1_Nights" 1 "global.conquest.cop" "cop.png" "TurfWarLarge0"
+procon.protected.teamnames.add "XP1_Nights" 2 "global.conquest.crim" "crim.png" "TurfWarLarge0"
+
+procon.protected.teamnames.add "XP1_Projects" 0 "global.conquest.neutral" "" "TurfWarLarge0"
+procon.protected.teamnames.add "XP1_Projects" 1 "global.conquest.cop" "cop.png" "TurfWarLarge0"
+procon.protected.teamnames.add "XP1_Projects" 2 "global.conquest.crim" "crim.png" "TurfWarLarge0"
+
+procon.protected.teamnames.add "XP1_Sawmill" 0 "global.conquest.neutral" "" "TurfWarLarge0"
+procon.protected.teamnames.add "XP1_Sawmill" 1 "global.conquest.cop" "cop.png" "TurfWarLarge0"
+procon.protected.teamnames.add "XP1_Sawmill" 2 "global.conquest.crim" "crim.png" "TurfWarLarge0"
 
 // Conquest Small
 ///////////////////////////////////////////////////////////////////////////////
@@ -322,6 +388,23 @@ procon.protected.teamnames.add "MP_Glades" 0 "global.conquest.neutral" "" "TurfW
 procon.protected.teamnames.add "MP_Glades" 1 "global.conquest.cop" "cop.png" "TurfWarSmall0"
 procon.protected.teamnames.add "MP_Glades" 2 "global.conquest.crim" "crim.png" "TurfWarSmall0"
 
+// XP1 (Criminal Activity)
+procon.protected.teamnames.add "XP1_MallCops" 0 "global.conquest.neutral" "" "TurfWarSmall0"
+procon.protected.teamnames.add "XP1_MallCops" 1 "global.conquest.cop" "cop.png" "TurfWarSmall0"
+procon.protected.teamnames.add "XP1_MallCops" 2 "global.conquest.crim" "crim.png" "TurfWarSmall0"
+
+procon.protected.teamnames.add "XP1_Nights" 0 "global.conquest.neutral" "" "TurfWarSmall0"
+procon.protected.teamnames.add "XP1_Nights" 1 "global.conquest.cop" "cop.png" "TurfWarSmall0"
+procon.protected.teamnames.add "XP1_Nights" 2 "global.conquest.crim" "crim.png" "TurfWarSmall0"
+
+procon.protected.teamnames.add "XP1_Projects" 0 "global.conquest.neutral" "" "TurfWarSmall0"
+procon.protected.teamnames.add "XP1_Projects" 1 "global.conquest.cop" "cop.png" "TurfWarSmall0"
+procon.protected.teamnames.add "XP1_Projects" 2 "global.conquest.crim" "crim.png" "TurfWarSmall0"
+
+procon.protected.teamnames.add "XP1_Sawmill" 0 "global.conquest.neutral" "" "TurfWarSmall0"
+procon.protected.teamnames.add "XP1_Sawmill" 1 "global.conquest.cop" "cop.png" "TurfWarSmall0"
+procon.protected.teamnames.add "XP1_Sawmill" 2 "global.conquest.crim" "crim.png" "TurfWarSmall0"
+
 // Rescue
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -360,6 +443,23 @@ procon.protected.teamnames.add "MP_Hills" 2 "global.hostage.crim" "crim.png" "Ho
 procon.protected.teamnames.add "MP_Glades" 0 "global.hostage.neutral" "" "Hostage0"
 procon.protected.teamnames.add "MP_Glades" 1 "global.hostage.cop" "cop.png" "Hostage0"
 procon.protected.teamnames.add "MP_Glades" 2 "global.hostage.crim" "crim.png" "Hostage0"
+
+// XP1 (Criminal Activity)
+procon.protected.teamnames.add "XP1_MallCops" 0 "global.hostage.neutral" "" "Hostage0"
+procon.protected.teamnames.add "XP1_MallCops" 1 "global.hostage.cop" "cop.png" "Hostage0"
+procon.protected.teamnames.add "XP1_MallCops" 2 "global.hostage.crim" "crim.png" "Hostage0"
+
+procon.protected.teamnames.add "XP1_Nights" 0 "global.hostage.neutral" "" "Hostage0"
+procon.protected.teamnames.add "XP1_Nights" 1 "global.hostage.cop" "cop.png" "Hostage0"
+procon.protected.teamnames.add "XP1_Nights" 2 "global.hostage.crim" "crim.png" "Hostage0"
+
+procon.protected.teamnames.add "XP1_Projects" 0 "global.hostage.neutral" "" "Hostage0"
+procon.protected.teamnames.add "XP1_Projects" 1 "global.hostage.cop" "cop.png" "Hostage0"
+procon.protected.teamnames.add "XP1_Projects" 2 "global.hostage.crim" "crim.png" "Hostage0"
+
+procon.protected.teamnames.add "XP1_Sawmill" 0 "global.hostage.neutral" "" "Hostage0"
+procon.protected.teamnames.add "XP1_Sawmill" 1 "global.hostage.cop" "cop.png" "Hostage0"
+procon.protected.teamnames.add "XP1_Sawmill" 2 "global.hostage.crim" "crim.png" "Hostage0"
 
 // Crosshair
 ///////////////////////////////////////////////////////////////////////////////
@@ -400,6 +500,23 @@ procon.protected.teamnames.add "MP_Glades" 0 "global.hit.neutral" "" "Hit0"
 procon.protected.teamnames.add "MP_Glades" 1 "global.hit.cop" "cop.png" "Hit0"
 procon.protected.teamnames.add "MP_Glades" 2 "global.hit.crim" "crim.png" "Hit0"
 
+// XP1 (Criminal Activity)
+procon.protected.teamnames.add "XP1_MallCops" 0 "global.hit.neutral" "" "Hit0"
+procon.protected.teamnames.add "XP1_MallCops" 1 "global.hit.cop" "cop.png" "Hit0"
+procon.protected.teamnames.add "XP1_MallCops" 2 "global.hit.crim" "crim.png" "Hit0"
+
+procon.protected.teamnames.add "XP1_Nights" 0 "global.hit.neutral" "" "Hit0"
+procon.protected.teamnames.add "XP1_Nights" 1 "global.hit.cop" "cop.png" "Hit0"
+procon.protected.teamnames.add "XP1_Nights" 2 "global.hit.crim" "crim.png" "Hit0"
+
+procon.protected.teamnames.add "XP1_Projects" 0 "global.hit.neutral" "" "Hit0"
+procon.protected.teamnames.add "XP1_Projects" 1 "global.hit.cop" "cop.png" "Hit0"
+procon.protected.teamnames.add "XP1_Projects" 2 "global.hit.crim" "crim.png" "Hit0"
+
+procon.protected.teamnames.add "XP1_Sawmill" 0 "global.hit.neutral" "" "Hit0"
+procon.protected.teamnames.add "XP1_Sawmill" 1 "global.hit.cop" "cop.png" "Hit0"
+procon.protected.teamnames.add "XP1_Sawmill" 2 "global.hit.crim" "crim.png" "Hit0"
+
 // Heist
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -438,6 +555,23 @@ procon.protected.teamnames.add "MP_Hills" 2 "global.heist.crim" "crim.png" "Heis
 procon.protected.teamnames.add "MP_Glades" 0 "global.heist.neutral" "" "Heist0"
 procon.protected.teamnames.add "MP_Glades" 1 "global.heist.cop" "cop.png" "Heist0"
 procon.protected.teamnames.add "MP_Glades" 2 "global.heist.crim" "crim.png" "Heist0"
+
+// XP1 (Criminal Activity)
+procon.protected.teamnames.add "XP1_MallCops" 0 "global.heist.neutral" "" "Heist0"
+procon.protected.teamnames.add "XP1_MallCops" 1 "global.heist.cop" "cop.png" "Heist0"
+procon.protected.teamnames.add "XP1_MallCops" 2 "global.heist.crim" "crim.png" "Heist0"
+
+procon.protected.teamnames.add "XP1_Nights" 0 "global.heist.neutral" "" "Heist0"
+procon.protected.teamnames.add "XP1_Nights" 1 "global.heist.cop" "cop.png" "Heist0"
+procon.protected.teamnames.add "XP1_Nights" 2 "global.heist.crim" "crim.png" "Heist0"
+
+procon.protected.teamnames.add "XP1_Projects" 0 "global.heist.neutral" "" "Heist0"
+procon.protected.teamnames.add "XP1_Projects" 1 "global.heist.cop" "cop.png" "Heist0"
+procon.protected.teamnames.add "XP1_Projects" 2 "global.heist.crim" "crim.png" "Heist0"
+
+procon.protected.teamnames.add "XP1_Sawmill" 0 "global.heist.neutral" "" "Heist0"
+procon.protected.teamnames.add "XP1_Sawmill" 1 "global.heist.cop" "cop.png" "Heist0"
+procon.protected.teamnames.add "XP1_Sawmill" 2 "global.heist.crim" "crim.png" "Heist0"
 
 // Team Deathmatch
 ///////////////////////////////////////////////////////////////////////////////
@@ -478,6 +612,23 @@ procon.protected.teamnames.add "MP_Glades" 0 "global.tdm.neutral" "" "TeamDeathM
 procon.protected.teamnames.add "MP_Glades" 1 "global.tdm.cop" "cop.png" "TeamDeathMatch0"
 procon.protected.teamnames.add "MP_Glades" 2 "global.tdm.crim" "crim.png" "TeamDeathMatch0"
 
+// XP1 (Criminal Activity)
+procon.protected.teamnames.add "XP1_MallCops" 0 "global.tdm.neutral" "" "TeamDeathMatch0"
+procon.protected.teamnames.add "XP1_MallCops" 1 "global.tdm.cop" "cop.png" "TeamDeathMatch0"
+procon.protected.teamnames.add "XP1_MallCops" 2 "global.tdm.crim" "crim.png" "TeamDeathMatch0"
+
+procon.protected.teamnames.add "XP1_Nights" 0 "global.tdm.neutral" "" "TeamDeathMatch0"
+procon.protected.teamnames.add "XP1_Nights" 1 "global.tdm.cop" "cop.png" "TeamDeathMatch0"
+procon.protected.teamnames.add "XP1_Nights" 2 "global.tdm.crim" "crim.png" "TeamDeathMatch0"
+
+procon.protected.teamnames.add "XP1_Projects" 0 "global.tdm.neutral" "" "TeamDeathMatch0"
+procon.protected.teamnames.add "XP1_Projects" 1 "global.tdm.cop" "cop.png" "TeamDeathMatch0"
+procon.protected.teamnames.add "XP1_Projects" 2 "global.tdm.crim" "crim.png" "TeamDeathMatch0"
+
+procon.protected.teamnames.add "XP1_Sawmill" 0 "global.tdm.neutral" "" "TeamDeathMatch0"
+procon.protected.teamnames.add "XP1_Sawmill" 1 "global.tdm.cop" "cop.png" "TeamDeathMatch0"
+procon.protected.teamnames.add "XP1_Sawmill" 2 "global.tdm.crim" "crim.png" "TeamDeathMatch0"
+
 // Hotwire
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -500,6 +651,11 @@ procon.protected.teamnames.add "MP_OffShore" 2 "global.hotwire.crim" "crim.png" 
 procon.protected.teamnames.add "MP_Glades" 0 "global.hotwire.neutral" "" "Hotwire0"
 procon.protected.teamnames.add "MP_Glades" 1 "global.hotwire.cop" "cop.png" "Hotwire0"
 procon.protected.teamnames.add "MP_Glades" 2 "global.hotwire.crim" "crim.png" "Hotwire0"
+
+// XP1 (Criminal Activity)
+procon.protected.teamnames.add "XP1_Sawmill" 0 "global.hotwire.neutral" "" "Hotwire0"
+procon.protected.teamnames.add "XP1_Sawmill" 1 "global.hotwire.cop" "cop.png" "Hotwire0"
+procon.protected.teamnames.add "XP1_Sawmill" 2 "global.hotwire.crim" "crim.png" "Hotwire0"
 
 // Blood Money
 ///////////////////////////////////////////////////////////////////////////////
@@ -539,6 +695,44 @@ procon.protected.teamnames.add "MP_Hills" 2 "global.bm.crim" "crim.png" "BloodMo
 procon.protected.teamnames.add "MP_Glades" 0 "global.bm.neutral" "" "BloodMoney0"
 procon.protected.teamnames.add "MP_Glades" 1 "global.bm.cop" "cop.png" "BloodMoney0"
 procon.protected.teamnames.add "MP_Glades" 2 "global.bm.crim" "crim.png" "BloodMoney0"
+
+// XP1 (Criminal Activity)
+procon.protected.teamnames.add "XP1_MallCops" 0 "global.bm.neutral" "" "BloodMoney0"
+procon.protected.teamnames.add "XP1_MallCops" 1 "global.bm.cop" "cop.png" "BloodMoney0"
+procon.protected.teamnames.add "XP1_MallCops" 2 "global.bm.crim" "crim.png" "BloodMoney0"
+
+procon.protected.teamnames.add "XP1_Nights" 0 "global.bm.neutral" "" "BloodMoney0"
+procon.protected.teamnames.add "XP1_Nights" 1 "global.bm.cop" "cop.png" "BloodMoney0"
+procon.protected.teamnames.add "XP1_Nights" 2 "global.bm.crim" "crim.png" "BloodMoney0"
+
+procon.protected.teamnames.add "XP1_Projects" 0 "global.bm.neutral" "" "BloodMoney0"
+procon.protected.teamnames.add "XP1_Projects" 1 "global.bm.cop" "cop.png" "BloodMoney0"
+procon.protected.teamnames.add "XP1_Projects" 2 "global.bm.crim" "crim.png" "BloodMoney0"
+
+procon.protected.teamnames.add "XP1_Sawmill" 0 "global.bm.neutral" "" "BloodMoney0"
+procon.protected.teamnames.add "XP1_Sawmill" 1 "global.bd.cop" "cop.png" "BloodMoney0"
+procon.protected.teamnames.add "XP1_Sawmill" 2 "global.bm.crim" "crim.png" "BloodMoney0"
+
+// Bounty Hunter
+///////////////////////////////////////////////////////////////////////////////
+
+// XP1 (Criminal Activity)
+procon.protected.teamnames.add "XP1_MallCops" 0 "global.cashgrab.neutral" "" "CashGrab0"
+procon.protected.teamnames.add "XP1_MallCops" 1 "global.cashgrab.cop" "cop.png" "CashGrab0"
+procon.protected.teamnames.add "XP1_MallCops" 2 "global.cashgrab.crim" "crim.png" "CashGrab0"
+
+procon.protected.teamnames.add "XP1_Nights" 0 "global.cashgrab.neutral" "" "CashGrab0"
+procon.protected.teamnames.add "XP1_Nights" 1 "global.cashgrab.cop" "cop.png" "CashGrab0"
+procon.protected.teamnames.add "XP1_Nights" 2 "global.cashgrab.crim" "crim.png" "CashGrab0"
+
+procon.protected.teamnames.add "XP1_Projects" 0 "global.cashgrab.neutral" "" "CashGrab0"
+procon.protected.teamnames.add "XP1_Projects" 1 "global.cashgrab.cop" "cop.png" "CashGrab0"
+procon.protected.teamnames.add "XP1_Projects" 2 "global.cashgrab.crim" "crim.png" "CashGrab0"
+
+procon.protected.teamnames.add "XP1_Sawmill" 0 "global.cashgrab.neutral" "" "CashGrab0"
+procon.protected.teamnames.add "XP1_Sawmill" 1 "global.cashgrab.cop" "cop.png" "CashGrab0"
+procon.protected.teamnames.add "XP1_Sawmill" 2 "global.cashgrab.crim" "crim.png" "CashGrab0"
+
 
 ///////////////////////////////////////////////////////////////////////////////
 procon.protected.tasks.clear
